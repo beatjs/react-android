@@ -1,2 +1,3 @@
+include ':android:react'
 include ':app'
 rootProject.name = "ReactNativeCore"
