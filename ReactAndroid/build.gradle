@@ -333,7 +333,7 @@ def cleanReactNdkLib = tasks.register("cleanReactNdkLib", Exec) {
 }
 
 def packageReactNdkLibs = tasks.register("packageReactNdkLibs", Copy) {
-    dependsOn(buildReactNdkLib)
+//    dependsOn(buildReactNdkLib)
     from("$buildDir/react-ndk/all")
     into("$buildDir/react-ndk/exported")
     exclude("**/libjsc.so")
