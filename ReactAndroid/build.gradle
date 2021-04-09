@@ -111,7 +111,8 @@ task prepareHermes() {
     copy {
         from soFiles
         from "src/main/jni/first-party/hermes/Android.mk"
-        into "$thirdPartyNdkDir/hermes"
+        into "src/main/jni/first-party/hermes/jni"
+//        into "$thirdPartyNdkDir/hermes"
     }
 }
 
@@ -374,8 +375,8 @@ task extractJNIFiles {
 }
 
 android {
+    ndkVersion '20.1.5948944'
     compileSdkVersion 29
-
     compileOptions {
         sourceCompatibility(JavaVersion.VERSION_1_8)
         targetCompatibility(JavaVersion.VERSION_1_8)
