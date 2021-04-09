@@ -12,8 +12,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ReactAndroid" />
-            <option value="$PROJECT_DIR$/android" />
-            <option value="$PROJECT_DIR$/android/react" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

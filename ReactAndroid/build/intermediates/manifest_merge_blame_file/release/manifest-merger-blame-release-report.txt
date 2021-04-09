@@ -6,11 +6,11 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/Users/xujia/Documents/GitHub/react-native-core-android/ReactAndroid/src/main/AndroidManifest.xml
+8-->/Users/xujia/Documents/GitHub/react-android/ReactAndroid/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/xujia/Documents/GitHub/react-native-core-android/ReactAndroid/src/main/AndroidManifest.xml
+9-->/Users/xujia/Documents/GitHub/react-android/ReactAndroid/src/main/AndroidManifest.xml
 10
 11    <application />
-11-->/Users/xujia/Documents/GitHub/react-native-core-android/ReactAndroid/src/main/AndroidManifest.xml:3:5-20
+11-->/Users/xujia/Documents/GitHub/react-android/ReactAndroid/src/main/AndroidManifest.xml:3:5-20
 12
 13</manifest>
