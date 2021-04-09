@@ -333,7 +333,7 @@ def cleanReactNdkLib = tasks.register("cleanReactNdkLib", Exec) {
 }
 
 def packageReactNdkLibs = tasks.register("packageReactNdkLibs", Copy) {
-//    dependsOn(buildReactNdkLib)
+    dependsOn(buildReactNdkLib)
     from("$buildDir/react-ndk/all")
     into("$buildDir/react-ndk/exported")
     exclude("**/libjsc.so")
@@ -417,7 +417,7 @@ android {
 
     tasks.withType(JavaCompile) {
         compileTask ->
-            compileTask.dependsOn(packageReactNdkLibs)
+//            compileTask.dependsOn(packageReactNdkLibs)
     }
 
 //    clean.dependsOn(cleanReactNdkLib)
