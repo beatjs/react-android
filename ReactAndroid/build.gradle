@@ -376,7 +376,7 @@ task extractJNIFiles {
 
 android {
     ndkVersion '20.1.5948944'
-    compileSdkVersion 29
+    compileSdkVersion 30
     compileOptions {
         sourceCompatibility(JavaVersion.VERSION_1_8)
         targetCompatibility(JavaVersion.VERSION_1_8)
@@ -384,7 +384,7 @@ android {
 
     defaultConfig {
         minSdkVersion(16)
-        targetSdkVersion(28)
+        targetSdkVersion(30)
         versionCode(1)
         versionName("1.0")
 
@@ -454,18 +454,19 @@ dependencies {
     extractHeaders("com.facebook.fbjni:fbjni:0.0.2:headers")
     extractJNI("com.facebook.fbjni:fbjni:0.0.2")
 
-    testImplementation("junit:junit:${JUNIT_VERSION}")
-    testImplementation("org.powermock:powermock-api-mockito:${POWERMOCK_VERSION}")
-    testImplementation("org.powermock:powermock-module-junit4-rule:${POWERMOCK_VERSION}")
-    testImplementation("org.powermock:powermock-classloading-xstream:${POWERMOCK_VERSION}")
-    testImplementation("org.mockito:mockito-core:${MOCKITO_CORE_VERSION}")
-    testImplementation("org.easytesting:fest-assert-core:${FEST_ASSERT_CORE_VERSION}")
-    testImplementation("org.robolectric:robolectric:${ROBOLECTRIC_VERSION}")
-
-    androidTestImplementation(fileTree(dir: "src/main/third-party/java/buck-android-support/", include: ["*.jar"]))
-    androidTestImplementation("androidx.test:runner:${ANDROIDX_TEST_VERSION}")
-    androidTestImplementation("androidx.test:rules:${ANDROIDX_TEST_VERSION}")
-    androidTestImplementation("org.mockito:mockito-core:${MOCKITO_CORE_VERSION}")
+//    testImplementation("junit:junit:${JUNIT_VERSION}")
+//    testImplementation("org.powermock:powermock-api-mockito:${POWERMOCK_VERSION}")
+//    testImplementation("org.powermock:powermock-module-junit4-rule:${POWERMOCK_VERSION}")
+//    testImplementation("org.powermock:powermock-classloading-xstream:${POWERMOCK_VERSION}")
+//    testImplementation("org.mockito:mockito-core:${MOCKITO_CORE_VERSION}")
+//    testImplementation("org.easytesting:fest-assert-core:${FEST_ASSERT_CORE_VERSION}")
+//    testImplementation("org.robolectric:robolectric:${ROBOLECTRIC_VERSION}")
+//
+//    androidTestImplementation(fileTree(dir: "src/main/third-party/java/buck-android-support/", include: ["*.jar"]))
+//    androidTestImplementation("androidx.test:runner:${ANDROIDX_TEST_VERSION}")
+//    androidTestImplementation("androidx.test:rules:${ANDROIDX_TEST_VERSION}")
+//    androidTestImplementation("org.mockito:mockito-core:${MOCKITO_CORE_VERSION}")
+//    androidTestImplementation("org.easytesting:fest-assert-core:${FEST_ASSERT_CORE_VERSION}")
 }
 
 apply(from: "release.gradle")

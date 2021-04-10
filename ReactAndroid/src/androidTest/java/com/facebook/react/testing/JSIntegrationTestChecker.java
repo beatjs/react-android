@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * completed successfully, call {#link JSIntegrationTestChecker#await()} to wait for the test to
  * run, and {#link JSIntegrationTestChecker#isTestDone()} to check if it completed successfully.
  */
-public class JSIntegrationTestChecker extends BaseJavaModule {
+class JSIntegrationTestChecker extends BaseJavaModule {
 
   private final CountDownLatch mLatch;
 
