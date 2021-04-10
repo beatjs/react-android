@@ -1811,10 +1811,10 @@ com/facebook/react/views/scroll/ReactScrollViewHelper.java
  com.facebook.react.views.scroll.ReactScrollViewHelper
 com/facebook/react/uimanager/ReactYogaConfigProvider.java
  com.facebook.react.uimanager.ReactYogaConfigProvider
-com/facebook/react/modules/debug/interfaces/DeveloperSettings.java
- com.facebook.react.modules.debug.interfaces.DeveloperSettings
 com/facebook/react/uimanager/NativeKind.java
  com.facebook.react.uimanager.NativeKind
+com/facebook/react/modules/debug/interfaces/DeveloperSettings.java
+ com.facebook.react.modules.debug.interfaces.DeveloperSettings
 com/facebook/react/views/text/CustomLineHeightSpan.java
  com.facebook.react.views.text.CustomLineHeightSpan
 com/facebook/react/viewmanagers/SafeAreaViewManagerDelegate.java
