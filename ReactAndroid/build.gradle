@@ -111,8 +111,7 @@ task prepareHermes() {
     copy {
         from soFiles
         from "src/main/jni/first-party/hermes/Android.mk"
-        into "src/main/jni/first-party/hermes/jni"
-//        into "$thirdPartyNdkDir/hermes"
+        into "$thirdPartyNdkDir/hermes"
     }
 }
 
@@ -336,8 +335,8 @@ def packageReactNdkLibs = tasks.register("packageReactNdkLibs", Copy) {
     dependsOn(buildReactNdkLib)
     from("$buildDir/react-ndk/all")
     into("$buildDir/react-ndk/exported")
-    exclude("**/libjsc.so")
-    exclude("**/libhermes.so")
+//    exclude("**/libjsc.so")
+//    exclude("**/libhermes.so")
 }
 
 def packageReactNdkLibsForBuck = tasks.register("packageReactNdkLibsForBuck", Copy) {
@@ -406,7 +405,7 @@ android {
 
     sourceSets.main {
         jni.srcDirs = []
-        jniLibs.srcDir("react-ndk/exported")
+        jniLibs.srcDir("$buildDir/react-ndk/exported")
         res.srcDirs = ["src/main/res/devsupport", "src/main/res/shell", "src/main/res/views/modal", "src/main/res/views/uimanager"]
         java {
             srcDirs = ["src/main/java", "src/main/libraries/soloader/java", "src/main/jni/first-party/fb/jni/java"]
@@ -417,10 +416,10 @@ android {
 
     tasks.withType(JavaCompile) {
         compileTask ->
-//            compileTask.dependsOn(packageReactNdkLibs)
+            compileTask.dependsOn(packageReactNdkLibs)
     }
 
-//    clean.dependsOn(cleanReactNdkLib)
+    clean.dependsOn(cleanReactNdkLib)
 
     lintOptions {
         abortOnError(false)
