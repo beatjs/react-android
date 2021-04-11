@@ -335,8 +335,8 @@ def packageReactNdkLibs = tasks.register("packageReactNdkLibs", Copy) {
     dependsOn(buildReactNdkLib)
     from("$buildDir/react-ndk/all")
     into("$buildDir/react-ndk/exported")
-    exclude("**/libjsc.so")
-    exclude("**/libhermes.so")
+//    exclude("**/libjsc.so")
+//    exclude("**/libhermes.so")
 }
 
 def packageReactNdkLibsForBuck = tasks.register("packageReactNdkLibsForBuck", Copy) {

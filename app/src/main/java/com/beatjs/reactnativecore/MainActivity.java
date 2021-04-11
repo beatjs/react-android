@@ -3,7 +3,6 @@ package com.beatjs.reactnativecore;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactPackage;
