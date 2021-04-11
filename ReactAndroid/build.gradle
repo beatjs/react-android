@@ -455,4 +455,4 @@ dependencies {
     extractJNI("com.facebook.fbjni:fbjni:0.0.2")
 }
 
-apply(from: "release.gradle")
+//apply(from: "release.gradle")
