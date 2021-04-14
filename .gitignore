@@ -17,17 +17,7 @@ local.properties
 ReactAndroid/build/
 
 # app
-app/.idea/caches
-app/.idea/libraries
-app/.idea/modules.xml
-app/.idea/workspace.xml
-app/.idea/navEditor.xml
-app/.idea/assetWizardSettings.xml
+app/.idea
 
 # android
-android/.idea/caches
-android/.idea/libraries
-android/.idea/modules.xml
-android/.idea/workspace.xml
-android/.idea/navEditor.xml
-android/.idea/assetWizardSettings.xml
+android/.idea
