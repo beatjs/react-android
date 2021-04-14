@@ -28,8 +28,8 @@ android {
 }
 
 dependencies {
-//    implementation project(':react-android')
-    implementation 'com.github.beatjs:react-android:1.1.5'
+    implementation project(':react-android')
+//    implementation 'com.github.beatjs:react-android:0.64.3.+'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
