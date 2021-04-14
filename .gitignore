@@ -15,3 +15,11 @@
 local.properties
 
 ReactAndroid/build/
+
+# app
+app/.idea/caches
+app/.idea/libraries
+app/.idea/modules.xml
+app/.idea/workspace.xml
+app/.idea/navEditor.xml
+app/.idea/assetWizardSettings.xml
