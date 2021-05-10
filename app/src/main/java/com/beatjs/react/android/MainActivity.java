@@ -1,4 +1,4 @@
-package com.beatjs.reactnativecore;
+package com.beatjs.react.android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
