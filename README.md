@@ -1,5 +1,7 @@
 # react-android
 
+[![Adnroid CI with Gradle](https://github.com/beatjs/react-android/actions/workflows/android.yml/badge.svg?branch=main)](https://github.com/beatjs/react-android/actions/workflows/android.yml)
+
 Step 1. Add the JitPack repository to your build file
 ```groovy
 allprojects {
