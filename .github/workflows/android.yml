@@ -30,4 +30,4 @@ jobs:
     - name: Setup with Gradle
       run: ./gradlew wrapper
     - name: Install with Gradle
-      run: ./gradlew installDebug
+      run: ./gradlew install
