@@ -1,4 +1,2 @@
-include ':react-android'
 include ':app'
-project(':react-android').projectDir = new File(rootDir, 'ReactAndroid/')
-rootProject.name = "ReactNativeCore"
+include ':react-android'
