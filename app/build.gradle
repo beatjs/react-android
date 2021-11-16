@@ -6,12 +6,11 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.beatjs.reactnativecore"
+        applicationId "com.beatjs.react.android"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -29,6 +28,8 @@ android {
 
 dependencies {
     implementation project(':react-android')
+
+    implementation("com.squareup.okhttp3:okhttp:4.9.2")
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'

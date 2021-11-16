@@ -28,43 +28,21 @@ android {
     }
 }
 
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
 dependencies {
-
-    api fileTree(dir: 'libs', include: 'react-native-0.64.2.aar')
-    api fileTree(dir: 'libs', include: 'soloader-0.9.0.aar')
-    implementation fileTree(dir: 'libs', include: 'legacy-support-core-ui-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'documentfile-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'android-jsc-r245459.aar')
-    implementation fileTree(dir: 'libs', include: 'slidingpanelayout-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'okhttp-urlconnection-3.12.12.jar')
-    implementation fileTree(dir: 'libs', include: 'annotation-0.9.0.jar')
-    implementation fileTree(dir: 'libs', include: 'proguard-annotations-1.14.1.jar')
-    implementation fileTree(dir: 'libs', include: 'swiperefreshlayout-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'drawee-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'nativeimagefilters-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'print-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'fbcore-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'okhttp-3.12.12.jar')
-    implementation fileTree(dir: 'libs', include: 'imagepipeline-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'asynclayoutinflater-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'imagepipeline-okhttp3-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'localbroadcastmanager-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'imagepipeline-base-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'bolts-tasks-1.4.0.jar')
-    implementation fileTree(dir: 'libs', include: 'nativeimagetranscoder-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'fbjni-java-only-0.0.3.jar')
-    implementation fileTree(dir: 'libs', include: 'okio-1.17.5.jar')
-    implementation fileTree(dir: 'libs', include: 'jsr305-3.0.2.jar')
-    implementation fileTree(dir: 'libs', include: 'javax.inject-1.jar')
-    implementation fileTree(dir: 'libs', include: 'legacy-support-core-utils-1.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'fresco-2.0.0.aar')
-    implementation fileTree(dir: 'libs', include: 'infer-annotation-0.11.2.jar')
-    implementation fileTree(dir: 'libs', include: 'nativeloader-0.9.0.jar')
-    
+    api project(':react-native')
+    api project(':android-jsc')
+    api("com.facebook.soloader:soloader:${SO_LOADER_VERSION}")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
+    implementation("com.facebook.infer.annotation:infer-annotation:0.11.2")
+    implementation("com.facebook.yoga:proguard-annotations:1.14.1")
+    implementation("javax.inject:javax.inject:1")
+    implementation("androidx.appcompat:appcompat:1.0.2")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
+    implementation("com.facebook.fresco:fresco:${FRESCO_VERSION}")
+    implementation("com.facebook.fresco:imagepipeline-okhttp3:${FRESCO_VERSION}")
+    implementation("com.google.code.findbugs:jsr305:3.0.2")
+    implementation("com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}")
+    implementation("com.squareup.okhttp3:okhttp-urlconnection:${OKHTTP_VERSION}")
+    implementation("com.squareup.okio:okio:1.17.5")
+    implementation("com.facebook.fbjni:fbjni-java-only:0.0.3")
 }

@@ -1,2 +1,4 @@
 include ':app'
 include ':react-android'
+include ':react-native'
+include ':android-jsc'
