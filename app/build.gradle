@@ -33,4 +33,4 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 }
 
-apply from:'../publish-mavencentral.gradle'
+//apply from:'../publish-mavencentral.gradle'
