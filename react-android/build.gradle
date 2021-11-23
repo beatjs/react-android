@@ -19,7 +19,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
     compileOptions {
@@ -29,8 +29,8 @@ android {
 }
 
 dependencies {
-    api project(':react-native')
-    api project(':android-jsc')
+    api("com.beatjs.android:jsc:0.64.2.0")
+    api("com.beatjs.android:react-native-core:0.64.2.0")
     api("com.facebook.soloader:soloader:${SO_LOADER_VERSION}")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
     implementation("com.facebook.infer.annotation:infer-annotation:0.11.2")
@@ -50,3 +50,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
+apply from:'release.gradle'

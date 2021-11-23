@@ -1,2 +1,4 @@
 configurations.maybeCreate('default')
-artifacts.add('default', file('react-native-0.64.2.aar'))
+artifacts.add('default', file('dist/react-native/0.64.2/react-native-0.64.2.aar'))
+
+apply from:'release.gradle'

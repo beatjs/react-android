@@ -16,3 +16,5 @@ app/.idea
 
 # android
 android/.idea
+android-jsc/build
+react-native/build

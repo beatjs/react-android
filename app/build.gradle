@@ -27,10 +27,8 @@ android {
 }
 
 dependencies {
-    implementation project(':react-android')
+    implementation 'com.beatjs.android:react-native:0.64.2.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 }
-
-//apply from:'../publish-mavencentral.gradle'
